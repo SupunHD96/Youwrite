@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {NavigationBar} from "./Pages/Home"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          YOUWRITE.COM
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          YOUWRITE.COM
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={NavigationBar}/>
+
+      </Switch>
+    </Router>
   );
 }
 
