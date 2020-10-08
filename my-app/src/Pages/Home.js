@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar,Carousel,Button,Form,FormControl, Nav,Card} from 'react-bootstrap';
-import './Home.css';
+import './styles/Home.css';
 import CarouselImage1 from "../Images/description.jpg"
 import CarouselImage2 from "../Images/description2.jpg"
 import CarouselImage3 from "../Images/description3.jpg"
@@ -28,7 +28,7 @@ export const NavigationBar= () =>(
       <Form inline>
       <FormControl type="text" placeholder="Search" className="search" />
       <Button  className="buttons3">Search</Button>
-      <Button  className="buttons1">Sign In</Button>
+      <a href="/signin"><Button  className="buttons1">Sign In</Button></a>
       <Button  className="buttons2">Sign up</Button>
       </Form>
       </Navbar.Collapse>
