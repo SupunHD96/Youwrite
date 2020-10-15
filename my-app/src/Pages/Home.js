@@ -29,7 +29,7 @@ export const NavigationBar= () =>(
       <FormControl type="text" placeholder="Search" className="search" />
       <Button  className="buttons3">Search</Button>
       <a href="/signin"><Button  className="buttons1">Sign In</Button></a>
-      <Button  className="buttons2">Sign up</Button>
+      <a href="/signup"><Button  className="buttons2">Sign up</Button></a>
       </Form>
       </Navbar.Collapse>
       </Navbar>
