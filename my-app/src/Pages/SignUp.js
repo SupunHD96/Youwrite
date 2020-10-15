@@ -45,11 +45,11 @@ const SignUp = () => {
                       <hr className="line"></hr>
 
                       <Form.Group controlId="formBasicEmail">
-                      <Form.Control type="email" placeholder="Enter Your email" className="input"/>
+                      <Form.Control type="email" placeholder="Enter Your Email" className="input"/>
                       </Form.Group>
 
                       <Form.Group controlId="formBasicConfirmEmail">
-                      <Form.Control type="email" placeholder="Confirm email" className="input"/>
+                      <Form.Control type="email" placeholder="Confirm Email" className="input"/>
                       </Form.Group>
 
                       <hr className="line"></hr>
