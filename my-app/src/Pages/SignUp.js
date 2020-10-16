@@ -33,7 +33,7 @@ const SignUp = () => {
       <FormControl type="text" placeholder="Search" className="search" />
       <Button  className="buttons3">Search</Button>
       <a href="/signin"><Button  className="buttons1">Sign In</Button></a>
-      <a href="/signup"><Button  className="buttons2">Sign up</Button></a>
+      <a href="/home"><Button  className="buttons2">Home</Button></a>
       </Form>
       </Navbar.Collapse>
       </Navbar>
