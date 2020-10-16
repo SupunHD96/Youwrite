@@ -59,7 +59,7 @@ body{
     margin-bottom: 20px;
 }
 @media (max-width:500px){
-    .Signupbox{
+    .signupbox{
         background-color: rgba(5,64,21,80%);
         margin: auto;
         padding: 20px;

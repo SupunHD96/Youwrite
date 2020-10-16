@@ -1,5 +1,5 @@
 import React from "react";
-import {Form,Button} from "react-bootstrap";
+import {Navbar,Form,FormControl,Button,Nav} from "react-bootstrap";
 import {Spring} from "react-spring/renderprops";
 import Logo from "../Images/logo.jpg";
 import "../Pages/styles/SignIn.css";
@@ -9,6 +9,7 @@ const SignIn = () => {
     <body>
    <div>
 
+{/*}
      <div className="barSignin">
        <img src={Logo} className="logoSignin"></img>
        <h1 className="youwriteSignin">You Write</h1>
@@ -16,7 +17,32 @@ const SignIn = () => {
 
      <hr className="lineSignin"></hr>
 
+*/}
+
+      <Navbar  variant="dark" sticky='top' expand="lg" className='navbar'>
+      <Navbar.Brand href="/" className='youwrite'>
+         <img alt="" src={Logo}
+         width="30" height="30" className="logo"
+         />{' '}You Write
+       </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="mr-auto">
+      </Nav>
+
+      <Form inline>
+      <FormControl type="text" placeholder="Search" className="search" />
+      <Button  className="buttons3">Search</Button>
+      <a href="/signin"><Button  className="buttons1">Sign In</Button></a>
+      <a href="/signup"><Button  className="buttons2">Sign up</Button></a>
+      </Form>
+      </Navbar.Collapse>
+      </Navbar>
+
+
      <div className="bottomdiv">
+
+     <br></br>
 
 {/* Spring is used to Animate Sign in Box */}
 
@@ -40,7 +66,6 @@ const SignIn = () => {
                       <Button variant="primary" type="submit" className="buttonSignin">Sign In</Button>
 
                       <a href="#" className="links">Forgot Password ?</a>
-
                       </Form>
               </div>
            </div>
@@ -49,7 +74,7 @@ const SignIn = () => {
 
 {/* Animate ends */}
 
-       <p>New to You Write ? <a href="#">Create Account.</a></p>
+       <p>New to You Write ? <a href="signup">Create Account.</a></p>
      </div>
      </div>
    </body>

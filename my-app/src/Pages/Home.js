@@ -11,11 +11,9 @@ import Post1image from "../Images/post1.jpg"
 
 export const NavigationBar= () =>(
     <div>
-      <div>
-
 
       <Navbar  variant="dark" sticky='top' expand="lg" className='navbar'>
-      <Navbar.Brand href="#home" className='youwrite'>
+      <Navbar.Brand href="/" className='youwrite'>
          <img alt="" src={Logo}
          width="30" height="30" className="logo"
          />{' '}You Write
@@ -73,9 +71,6 @@ export const NavigationBar= () =>(
         </Carousel.Item>
         </Carousel>
 
-       </div>
-
-
 
        <div className='post' >
        <Card className='cards' >
@@ -103,4 +98,4 @@ export const NavigationBar= () =>(
        
     </div>
   
-)
+);
